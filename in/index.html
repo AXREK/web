@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha de Película</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ficha de Película</h1>
+        <form class="movie-form">
+            <label for="titulo">Título:</label>
+            <input type="text" id="titulo" name="titulo" required>
+
+            <label for="anio">Año:</label>
+            <input type="text" id="anio" name="anio" required>
+
+            <label for="director">Director:</label>
+            <input type="text" id="director" name="director" required>
+
+            <label for="genero">Género:</label>
+            <select id="genero" name="genero" required>
+                <option value="comedia">Comedia</option>
+                <option value="drama">Drama</option>
+                <option value="thriller">Thriller</option>
+                <option value="aventuras">Aventuras</option>
+                <option value="terror">Terror</option>
+            </select>
+
+            <label for="argumento">Argumento:</label>
+            <textarea id="argumento" name="argumento" rows="3" required></textarea>
+
+            <div class="buttons">
+                <button type="reset">
+                    <img src="reset.png" alt="Limpiar">
+                </button>
+                <button type="submit">
+                    <img src="save.png" alt="Grabar">
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
